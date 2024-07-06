@@ -36,19 +36,19 @@ public class Combate{
         int dano = 0;
 
         if(sorte == 10){
-            dano = arma.dano+arma.dano;
+            dano = arma.getDano() +arma.getDano();
         }else if(sorte == 9){
-            dano = arma.dano+5;
+            dano = arma.getDano()+5;
         }else if(sorte == 8){
-            dano = arma.dano+2;
+            dano = arma.getDano()+2;
         }else if(sorte>=4 && sorte<=7){
-            dano = arma.dano;
+            dano = arma.getDano();
         }else if(sorte == 3){
-            dano = arma.dano-2;
+            dano = arma.getDano()-2;
         }else if(sorte == 2){
-            dano = arma.dano-5;
+            dano = arma.getDano()-5;
         }else if(sorte == 1){
-            dano = arma.dano-arma.dano;
+            dano = arma.getDano()-arma.getDano();
         }
         return dano;
     }
